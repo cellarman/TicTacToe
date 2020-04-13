@@ -42,7 +42,7 @@
             this.B3 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
-            this.C3 = new System.Windows.Forms.Button();
+            this.c3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,13 +70,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -175,22 +176,22 @@
             this.C2.UseVisualStyleBackColor = true;
             this.C2.Click += new System.EventHandler(this.button_click);
             // 
-            // C3
+            // c3
             // 
-            this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C3.Location = new System.Drawing.Point(336, 346);
-            this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(99, 99);
-            this.C3.TabIndex = 10;
-            this.C3.UseVisualStyleBackColor = true;
-            this.C3.Click += new System.EventHandler(this.button_click);
+            this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c3.Location = new System.Drawing.Point(336, 346);
+            this.c3.Name = "c3";
+            this.c3.Size = new System.Drawing.Size(99, 99);
+            this.c3.TabIndex = 10;
+            this.c3.UseVisualStyleBackColor = true;
+            this.c3.Click += new System.EventHandler(this.button_click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 515);
-            this.Controls.Add(this.C3);
+            this.Controls.Add(this.c3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
             this.Controls.Add(this.B3);
@@ -230,7 +231,7 @@
         private System.Windows.Forms.Button B3;
         private System.Windows.Forms.Button C1;
         private System.Windows.Forms.Button C2;
-        private System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Button c3;
     }
 }
 

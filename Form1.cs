@@ -52,6 +52,7 @@ namespace TicTacToe
 
             turn = !turn;
             b.Enabled = false;
+            turn_count++;
 
             checkForWinner();
         }
@@ -66,8 +67,26 @@ namespace TicTacToe
                 there_is_a_winner = true;
             else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && (!B1.Enabled))
                 there_is_a_winner = true;
-            else if ((C1.Text == C2.Text) && (C2.Text == C3.Text) && (!C1.Enabled))
+            else if ((C1.Text == C2.Text) && (C2.Text == c3.Text) && (!C1.Enabled))
                 there_is_a_winner = true;
+
+            //vertical checks
+            else if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (!A1.Enabled))
+                there_is_a_winner = true;
+            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!A2.Enabled))
+                there_is_a_winner = true;
+            else if ((A3.Text == B3.Text) && (B2.Text == c3.Text) && (!A3.Enabled))
+                there_is_a_winner = true;
+
+            //diagonal checks
+            else if ((A1.Text == B2.Text) && (B2.Text == c3.Text) && (!A1.Enabled))
+                there_is_a_winner = true;
+            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!C1.Enabled))
+                there_is_a_winner = true;
+            
+
+
+
 
             if (there_is_a_winner)
             {
@@ -81,6 +100,15 @@ namespace TicTacToe
 
                 MessageBox.Show(winner + " Wins", "Congrats!");
             } //end of if statement
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show(" Draw!", "Too bad!");
+
+            }
+
+
+
         }//end checkForWinner
 
         private void disableButtons()
@@ -96,8 +124,22 @@ namespace TicTacToe
             catch { }
         }
 
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            turn = true;
+            turn_count = 0;
 
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
+                    b.Enabled = true;
+                    b.Text = "";
+                }
+            } //
+            catch { }
 
-
+        }
     }
 }
