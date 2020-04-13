@@ -42,7 +42,7 @@
             this.B3 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.C3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -91,7 +91,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(124, 24);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -103,7 +103,7 @@
             this.A2.Size = new System.Drawing.Size(99, 99);
             this.A2.TabIndex = 2;
             this.A2.UseVisualStyleBackColor = true;
-            this.A2.Click += new System.EventHandler(this.button2_Click);
+            this.A2.Click += new System.EventHandler(this.button_click);
             // 
             // A1
             // 
@@ -113,6 +113,7 @@
             this.A1.Size = new System.Drawing.Size(99, 99);
             this.A1.TabIndex = 3;
             this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.button_click);
             // 
             // A3
             // 
@@ -122,6 +123,7 @@
             this.A3.Size = new System.Drawing.Size(99, 99);
             this.A3.TabIndex = 4;
             this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.button_click);
             // 
             // B1
             // 
@@ -131,6 +133,7 @@
             this.B1.Size = new System.Drawing.Size(99, 99);
             this.B1.TabIndex = 5;
             this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.button_click);
             // 
             // B2
             // 
@@ -140,6 +143,7 @@
             this.B2.Size = new System.Drawing.Size(99, 99);
             this.B2.TabIndex = 6;
             this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.button_click);
             // 
             // B3
             // 
@@ -149,6 +153,7 @@
             this.B3.Size = new System.Drawing.Size(99, 99);
             this.B3.TabIndex = 7;
             this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.button_click);
             // 
             // C1
             // 
@@ -158,6 +163,7 @@
             this.C1.Size = new System.Drawing.Size(99, 99);
             this.C1.TabIndex = 8;
             this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.button_click);
             // 
             // C2
             // 
@@ -167,22 +173,24 @@
             this.C2.Size = new System.Drawing.Size(99, 99);
             this.C2.TabIndex = 9;
             this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.button_click);
             // 
-            // button9
+            // C3
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(336, 346);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(99, 99);
-            this.button9.TabIndex = 10;
-            this.button9.UseVisualStyleBackColor = true;
+            this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.14545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3.Location = new System.Drawing.Point(336, 346);
+            this.C3.Name = "C3";
+            this.C3.Size = new System.Drawing.Size(99, 99);
+            this.C3.TabIndex = 10;
+            this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.button_click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 515);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
             this.Controls.Add(this.B3);
@@ -222,7 +230,7 @@
         private System.Windows.Forms.Button B3;
         private System.Windows.Forms.Button C1;
         private System.Windows.Forms.Button C2;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button C3;
     }
 }
 
